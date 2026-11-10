@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/noteListFragment">
+
+    <fragment
+        android:id="@+id/noteListFragment"
+        android:name="com.lumatech.notivo.ui.notes.list.NoteListFragment"
+        android:label="@string/notes_title"
+        tools:layout="@layout/fragment_note_list" />
+
+    <fragment
+        android:id="@+id/taskListFragment"
+        android:name="com.lumatech.notivo.ui.tasks.TaskListFragment"
+        android:label="@string/tasks_title"
+        tools:layout="@layout/fragment_task_list" />
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.lumatech.notivo.ui.dashboard.DashboardFragment"
+        android:label="@string/nav_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/noteEditorFragment"
+        android:name="com.lumatech.notivo.ui.notes.editor.NoteEditorFragment"
+        android:label="@string/fab_new_note"
+        tools:layout="@layout/fragment_note_editor">
+        <argument
+            android:name="noteId"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <argument
+            android:name="folderId"
+            app:argType="long"
+            android:defaultValue="-1L" />
+        <argument
+            android:name="authorized"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/folderManagerFragment"
+        android:name="com.lumatech.notivo.ui.folders.FolderManagerFragment"
+        android:label="@string/folders_title"
+        tools:layout="@layout/fragment_folder_manager" />
+
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.lumatech.notivo.ui.settings.SettingsFragment"
+        android:label="@string/settings_title"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/trashFragment"
+        android:name="com.lumatech.notivo.ui.settings.TrashFragment"
+        android:label="@string/trash_title"
+        tools:layout="@layout/fragment_trash" />
+
+    <fragment
+        android:id="@+id/pinSetupFragment"
+        android:name="com.lumatech.notivo.ui.security.PinSetupFragment"
+        android:label="@string/pin_setup_title"
+        tools:layout="@layout/fragment_pin_input">
+        <argument
+            android:name="requestKey"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/pinVerifyFragment"
+        android:name="com.lumatech.notivo.ui.security.PinVerifyFragment"
+        android:label="@string/pin_verify_title"
+        tools:layout="@layout/fragment_pin_input">
+        <argument
+            android:name="requestKey"
+            app:argType="string"
+            android:defaultValue="" />
+    </fragment>
+
+</navigation>

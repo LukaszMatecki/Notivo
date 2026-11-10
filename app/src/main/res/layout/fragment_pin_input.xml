@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <ImageButton
+        android:id="@+id/btnPinBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_toolbar_ripple"
+        android:contentDescription="@string/action_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_arrow_back"
+        app:tint="?attr/colorOnSurface" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPinBack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingVertical="16dp">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:contentDescription="@null"
+                app:srcCompat="@drawable/ic_lock"
+                app:tint="?attr/colorPrimary" />
+
+            <TextView
+                android:id="@+id/tvPinTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textAppearance="?attr/textAppearanceNotivoTitleLarge"
+                tools:text="Wprowadź kod PIN" />
+
+            <TextView
+                android:id="@+id/tvPinSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:gravity="center"
+                android:textAppearance="?attr/textAppearanceNotivoSubtitleLight"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="Autoryzacja wymagana do odblokowania treści" />
+
+            <LinearLayout
+                android:id="@+id/pinDotsContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/pinDot1"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/bg_pin_dot_empty" />
+
+                <ImageView
+                    android:id="@+id/pinDot2"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/bg_pin_dot_empty" />
+
+                <ImageView
+                    android:id="@+id/pinDot3"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/bg_pin_dot_empty" />
+
+                <ImageView
+                    android:id="@+id/pinDot4"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@drawable/bg_pin_dot_empty" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvPinStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:gravity="center"
+                android:minHeight="20dp"
+                android:textAppearance="@style/TextAppearance.Material3.BodySmall"
+                android:textColor="?attr/colorError"
+                tools:text="Błędny kod PIN. Pozostało prób: 4" />
+
+            <GridLayout
+                android:id="@+id/pinKeypad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:columnCount="3">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/key1"
+                    style="@style/Widget.Notivo.PinKey"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp"
+                    android:text="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/key2"
+                    style="@style/Widget.Notivo.PinKey"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp"
+                    android:text="2" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/key3"
+                    style="@style/Widget.Notivo.PinKey"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp"
+                    android:text="3" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/key4"
+                    style="@style/Widget.Notivo.PinKey"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp"
+                    android:text="4" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/key5"
+                    style="@style/Widget.Notivo.PinKey"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp"
+                    android:text="5" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/key6"
+                    style="@style/Widget.Notivo.PinKey"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp"
+                    android:text="6" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/key7"
+                    style="@style/Widget.Notivo.PinKey"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp"
+                    android:text="7" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/key8"
+                    style="@style/Widget.Notivo.PinKey"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp"
+                    android:text="8" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/key9"
+                    style="@style/Widget.Notivo.PinKey"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp"
+                    android:text="9" />
+
+                <Space
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/key0"
+                    style="@style/Widget.Notivo.PinKey"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp"
+                    android:text="0" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/keyBackspace"
+                    style="@style/Widget.Notivo.PinKey"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="8dp"
+                    android:contentDescription="@string/pin_backspace_desc"
+                    app:icon="@drawable/ic_backspace"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconTint="?attr/colorOnSurface" />
+            </GridLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnUseBiometric"
+                style="@style/Widget.Material3.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/pin_use_biometric"
+                android:visibility="gone"
+                app:icon="@drawable/ic_fingerprint"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

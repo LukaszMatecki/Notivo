@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="notivo_primary">#F5A623</color>
+    <color name="notivo_primary_dark">#9E5D00</color>
+    <color name="notivo_on_primary">#FFFFFF</color>
+    <color name="notivo_primary_container">#FFF3E0</color>
+    <color name="notivo_on_primary_container">#4E2A00</color>
+
+    <color name="notivo_surface">#F4F4F6</color>
+    <color name="notivo_surface_container">#FFFFFF</color>
+    <color name="notivo_surface_container_high">#EAEAEF</color>
+    <color name="notivo_on_surface">#1C1B1F</color>
+    <color name="notivo_on_surface_variant">#5D5864</color>
+    <color name="notivo_outline">#D2CFD9</color>
+    <color name="notivo_error">#B3261E</color>
+
+    <color name="notivo_snackbar_bg">#232228</color>
+    <color name="notivo_snackbar_text">#F9F9FB</color>
+    <color name="notivo_snackbar_action">#FFB74D</color>
+
+    <color name="notivo_scrim">#80000000</color>
+
+    <color name="priority_high">#EA4335</color>
+    <color name="priority_medium">#F5A623</color>
+    <color name="priority_low">#34A853</color>
+</resources>

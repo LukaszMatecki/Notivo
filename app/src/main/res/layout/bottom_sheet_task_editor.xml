@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorSurfaceContainer"
+    android:orientation="vertical"
+    android:paddingHorizontal="20dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="24dp">
+
+    <View
+        android:layout_width="36dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_drag_handle" />
+
+    <TextView
+        android:id="@+id/tvTaskSheetHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/task_new_title"
+        android:textAppearance="?attr/textAppearanceNotivoTitleLarge" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Notivo.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:hint="@string/task_field_title">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTaskTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences"
+            android:maxLines="2" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Notivo.TextInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="@string/task_field_description">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLines="3" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPickDueDate"
+            style="@style/Widget.Notivo.TonalButton"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:gravity="start|center_vertical"
+            android:paddingHorizontal="16dp"
+            android:text="@string/task_due_date_none"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/ic_calendar"
+            app:iconPadding="10dp" />
+
+        <ImageButton
+            android:id="@+id/btnClearDueDate"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/bg_toolbar_ripple"
+            android:contentDescription="@string/task_clear_date"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_close"
+            app:tint="?attr/colorOnSurfaceVariant" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/task_priority_label"
+        android:textAppearance="?attr/textAppearanceNotivoSectionHeader" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPriorityLow"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/priority_low"
+            android:textColor="@color/selector_pill_chip_text"
+            app:checkedIconTint="@color/notivo_on_primary_container"
+            app:chipBackgroundColor="@color/selector_pill_chip_sheet_bg"
+            app:chipSurfaceColor="@android:color/transparent"
+            app:chipCornerRadius="24dp"
+            app:chipStrokeWidth="0dp"
+            app:shapeAppearance="@style/ShapeAppearance.Notivo.ChipPill" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPriorityMedium"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/priority_medium"
+            android:textColor="@color/selector_pill_chip_text"
+            app:checkedIconTint="@color/notivo_on_primary_container"
+            app:chipBackgroundColor="@color/selector_pill_chip_sheet_bg"
+            app:chipSurfaceColor="@android:color/transparent"
+            app:chipCornerRadius="24dp"
+            app:chipStrokeWidth="0dp"
+            app:shapeAppearance="@style/ShapeAppearance.Notivo.ChipPill" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPriorityHigh"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/priority_high"
+            android:textColor="@color/selector_pill_chip_text"
+            app:checkedIconTint="@color/notivo_on_primary_container"
+            app:chipBackgroundColor="@color/selector_pill_chip_sheet_bg"
+            app:chipSurfaceColor="@android:color/transparent"
+            app:chipCornerRadius="24dp"
+            app:chipStrokeWidth="0dp"
+            app:shapeAppearance="@style/ShapeAppearance.Notivo.ChipPill" />
+    </com.google.android.material.chip.ChipGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnArchiveTask"
+            style="@style/Widget.Notivo.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:layout_marginEnd="10dp"
+            android:paddingHorizontal="18dp"
+            android:text="@string/task_action_archive"
+            android:visibility="gone"
+            app:cornerRadius="26dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveTask"
+            style="@style/Widget.Notivo.PrimaryPillButton"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:text="@string/action_save"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="26dp" />
+    </LinearLayout>
+
+</LinearLayout>

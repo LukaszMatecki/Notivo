@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ==================== OUTFIT (Default - VoltUp Inspired) ==================== -->
+    <style name="ThemeOverlay.Notivo.Font.Outfit" parent="">
+        <item name="textAppearanceNotivoDisplay">@style/TextAppearance.Notivo.Display.Outfit</item>
+        <item name="textAppearanceNotivoStatNumber">@style/TextAppearance.Notivo.StatNumber.Outfit</item>
+        <item name="textAppearanceNotivoTitleLarge">@style/TextAppearance.Notivo.TitleLarge.Outfit</item>
+        <item name="textAppearanceNotivoTitleMedium">@style/TextAppearance.Notivo.TitleMedium.Outfit</item>
+        <item name="textAppearanceNotivoSectionHeader">@style/TextAppearance.Notivo.SectionHeader.Outfit</item>
+        <item name="textAppearanceNotivoSubtitleLight">@style/TextAppearance.Notivo.SubtitleLight.Outfit</item>
+        <item name="textAppearanceNotivoMetaLight">@style/TextAppearance.Notivo.MetaLight.Outfit</item>
+
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.Notivo.M3.DisplayLarge.Outfit</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.Notivo.M3.DisplayMedium.Outfit</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.Notivo.M3.DisplaySmall.Outfit</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Notivo.M3.HeadlineLarge.Outfit</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Notivo.M3.HeadlineMedium.Outfit</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Notivo.M3.HeadlineSmall.Outfit</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Notivo.M3.TitleLarge.Outfit</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Notivo.M3.TitleMedium.Outfit</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Notivo.M3.TitleSmall.Outfit</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Notivo.M3.BodyLarge.Outfit</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Notivo.M3.BodyMedium.Outfit</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Notivo.M3.BodySmall.Outfit</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Notivo.M3.LabelLarge.Outfit</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Notivo.M3.LabelMedium.Outfit</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Notivo.M3.LabelSmall.Outfit</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.Display.Outfit" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="fontFamily">@font/outfit_extrabold</item>
+        <item name="android:fontFamily">@font/outfit_extrabold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:letterSpacing">-0.025</item>
+        <item name="android:textColor">@color/notivo_on_surface</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.StatNumber.Outfit" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="fontFamily">@font/outfit_extrabold</item>
+        <item name="android:fontFamily">@font/outfit_extrabold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/notivo_on_surface</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.TitleLarge.Outfit" parent="TextAppearance.Material3.TitleLarge">
+        <item name="fontFamily">@font/outfit_bold</item>
+        <item name="android:fontFamily">@font/outfit_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:letterSpacing">-0.015</item>
+        <item name="android:textColor">@color/notivo_on_surface</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.TitleMedium.Outfit" parent="TextAppearance.Material3.TitleMedium">
+        <item name="fontFamily">@font/outfit_semibold</item>
+        <item name="android:fontFamily">@font/outfit_semibold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">16.5sp</item>
+        <item name="android:letterSpacing">-0.008</item>
+        <item name="android:textColor">@color/notivo_on_surface</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.SectionHeader.Outfit" parent="TextAppearance.Material3.LabelLarge">
+        <item name="fontFamily">@font/outfit_bold</item>
+        <item name="android:fontFamily">@font/outfit_bold</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12.5sp</item>
+        <item name="android:letterSpacing">0.04</item>
+        <item name="android:textColor">@color/notivo_primary_dark</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.SubtitleLight.Outfit" parent="TextAppearance.Material3.BodyMedium">
+        <item name="fontFamily">@font/outfit_light</item>
+        <item name="android:fontFamily">@font/outfit_light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">0.005</item>
+        <item name="android:textColor">@color/notivo_on_surface_variant</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.MetaLight.Outfit" parent="TextAppearance.Material3.BodySmall">
+        <item name="fontFamily">@font/outfit_light</item>
+        <item name="android:fontFamily">@font/outfit_light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">12.5sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/notivo_on_surface_variant</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.M3.DisplayLarge.Outfit" parent="TextAppearance.Material3.DisplayLarge"><item name="fontFamily">@font/outfit_bold</item><item name="android:fontFamily">@font/outfit_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.DisplayMedium.Outfit" parent="TextAppearance.Material3.DisplayMedium"><item name="fontFamily">@font/outfit_bold</item><item name="android:fontFamily">@font/outfit_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.DisplaySmall.Outfit" parent="TextAppearance.Material3.DisplaySmall"><item name="fontFamily">@font/outfit_bold</item><item name="android:fontFamily">@font/outfit_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineLarge.Outfit" parent="TextAppearance.Material3.HeadlineLarge"><item name="fontFamily">@font/outfit_bold</item><item name="android:fontFamily">@font/outfit_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineMedium.Outfit" parent="TextAppearance.Material3.HeadlineMedium"><item name="fontFamily">@font/outfit_bold</item><item name="android:fontFamily">@font/outfit_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineSmall.Outfit" parent="TextAppearance.Material3.HeadlineSmall"><item name="fontFamily">@font/outfit_semibold</item><item name="android:fontFamily">@font/outfit_semibold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleLarge.Outfit" parent="TextAppearance.Material3.TitleLarge"><item name="fontFamily">@font/outfit_semibold</item><item name="android:fontFamily">@font/outfit_semibold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleMedium.Outfit" parent="TextAppearance.Material3.TitleMedium"><item name="fontFamily">@font/outfit_semibold</item><item name="android:fontFamily">@font/outfit_semibold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleSmall.Outfit" parent="TextAppearance.Material3.TitleSmall"><item name="fontFamily">@font/outfit_medium</item><item name="android:fontFamily">@font/outfit_medium</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.BodyLarge.Outfit" parent="TextAppearance.Material3.BodyLarge"><item name="fontFamily">@font/outfit_regular</item><item name="android:fontFamily">@font/outfit_regular</item><item name="android:textSize">15.5sp</item></style>
+    <style name="TextAppearance.Notivo.M3.BodyMedium.Outfit" parent="TextAppearance.Material3.BodyMedium"><item name="fontFamily">@font/outfit_regular</item><item name="android:fontFamily">@font/outfit_regular</item><item name="android:textSize">14sp</item></style>
+    <style name="TextAppearance.Notivo.M3.BodySmall.Outfit" parent="TextAppearance.Material3.BodySmall"><item name="fontFamily">@font/outfit_light</item><item name="android:fontFamily">@font/outfit_light</item><item name="android:textSize">12.5sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelLarge.Outfit" parent="TextAppearance.Material3.LabelLarge"><item name="fontFamily">@font/outfit_semibold</item><item name="android:fontFamily">@font/outfit_semibold</item><item name="android:textStyle">normal</item><item name="android:textSize">14sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelMedium.Outfit" parent="TextAppearance.Material3.LabelMedium"><item name="fontFamily">@font/outfit_medium</item><item name="android:fontFamily">@font/outfit_medium</item><item name="android:textStyle">normal</item><item name="android:textSize">12sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelSmall.Outfit" parent="TextAppearance.Material3.LabelSmall"><item name="fontFamily">@font/outfit_medium</item><item name="android:fontFamily">@font/outfit_medium</item><item name="android:textStyle">normal</item><item name="android:textSize">11.5sp</item></style>
+
+    <!-- ==================== PLUS JAKARTA SANS ==================== -->
+    <style name="ThemeOverlay.Notivo.Font.Jakarta" parent="">
+        <item name="textAppearanceNotivoDisplay">@style/TextAppearance.Notivo.Display.Jakarta</item>
+        <item name="textAppearanceNotivoStatNumber">@style/TextAppearance.Notivo.StatNumber.Jakarta</item>
+        <item name="textAppearanceNotivoTitleLarge">@style/TextAppearance.Notivo.TitleLarge.Jakarta</item>
+        <item name="textAppearanceNotivoTitleMedium">@style/TextAppearance.Notivo.TitleMedium.Jakarta</item>
+        <item name="textAppearanceNotivoSectionHeader">@style/TextAppearance.Notivo.SectionHeader.Jakarta</item>
+        <item name="textAppearanceNotivoSubtitleLight">@style/TextAppearance.Notivo.SubtitleLight.Jakarta</item>
+        <item name="textAppearanceNotivoMetaLight">@style/TextAppearance.Notivo.MetaLight.Jakarta</item>
+
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.Notivo.M3.DisplayLarge.Jakarta</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.Notivo.M3.DisplayMedium.Jakarta</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.Notivo.M3.DisplaySmall.Jakarta</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Notivo.M3.HeadlineLarge.Jakarta</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Notivo.M3.HeadlineMedium.Jakarta</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Notivo.M3.HeadlineSmall.Jakarta</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Notivo.M3.TitleLarge.Jakarta</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Notivo.M3.TitleMedium.Jakarta</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Notivo.M3.TitleSmall.Jakarta</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Notivo.M3.BodyLarge.Jakarta</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Notivo.M3.BodyMedium.Jakarta</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Notivo.M3.BodySmall.Jakarta</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Notivo.M3.LabelLarge.Jakarta</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Notivo.M3.LabelMedium.Jakarta</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Notivo.M3.LabelSmall.Jakarta</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.Display.Jakarta" parent="TextAppearance.Notivo.Display.Outfit"><item name="fontFamily">@font/jakarta_bold</item><item name="android:fontFamily">@font/jakarta_bold</item></style>
+    <style name="TextAppearance.Notivo.StatNumber.Jakarta" parent="TextAppearance.Notivo.StatNumber.Outfit"><item name="fontFamily">@font/jakarta_bold</item><item name="android:fontFamily">@font/jakarta_bold</item></style>
+    <style name="TextAppearance.Notivo.TitleLarge.Jakarta" parent="TextAppearance.Notivo.TitleLarge.Outfit"><item name="fontFamily">@font/jakarta_bold</item><item name="android:fontFamily">@font/jakarta_bold</item></style>
+    <style name="TextAppearance.Notivo.TitleMedium.Jakarta" parent="TextAppearance.Notivo.TitleMedium.Outfit"><item name="fontFamily">@font/jakarta_semibold</item><item name="android:fontFamily">@font/jakarta_semibold</item></style>
+    <style name="TextAppearance.Notivo.SectionHeader.Jakarta" parent="TextAppearance.Notivo.SectionHeader.Outfit"><item name="fontFamily">@font/jakarta_bold</item><item name="android:fontFamily">@font/jakarta_bold</item></style>
+    <style name="TextAppearance.Notivo.SubtitleLight.Jakarta" parent="TextAppearance.Notivo.SubtitleLight.Outfit"><item name="fontFamily">@font/jakarta_regular</item><item name="android:fontFamily">@font/jakarta_regular</item></style>
+    <style name="TextAppearance.Notivo.MetaLight.Jakarta" parent="TextAppearance.Notivo.MetaLight.Outfit"><item name="fontFamily">@font/jakarta_regular</item><item name="android:fontFamily">@font/jakarta_regular</item></style>
+
+    <style name="TextAppearance.Notivo.M3.DisplayLarge.Jakarta" parent="TextAppearance.Material3.DisplayLarge"><item name="fontFamily">@font/jakarta_bold</item><item name="android:fontFamily">@font/jakarta_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.DisplayMedium.Jakarta" parent="TextAppearance.Material3.DisplayMedium"><item name="fontFamily">@font/jakarta_bold</item><item name="android:fontFamily">@font/jakarta_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.DisplaySmall.Jakarta" parent="TextAppearance.Material3.DisplaySmall"><item name="fontFamily">@font/jakarta_bold</item><item name="android:fontFamily">@font/jakarta_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineLarge.Jakarta" parent="TextAppearance.Material3.HeadlineLarge"><item name="fontFamily">@font/jakarta_bold</item><item name="android:fontFamily">@font/jakarta_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineMedium.Jakarta" parent="TextAppearance.Material3.HeadlineMedium"><item name="fontFamily">@font/jakarta_bold</item><item name="android:fontFamily">@font/jakarta_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineSmall.Jakarta" parent="TextAppearance.Material3.HeadlineSmall"><item name="fontFamily">@font/jakarta_semibold</item><item name="android:fontFamily">@font/jakarta_semibold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleLarge.Jakarta" parent="TextAppearance.Material3.TitleLarge"><item name="fontFamily">@font/jakarta_semibold</item><item name="android:fontFamily">@font/jakarta_semibold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleMedium.Jakarta" parent="TextAppearance.Material3.TitleMedium"><item name="fontFamily">@font/jakarta_semibold</item><item name="android:fontFamily">@font/jakarta_semibold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleSmall.Jakarta" parent="TextAppearance.Material3.TitleSmall"><item name="fontFamily">@font/jakarta_medium</item><item name="android:fontFamily">@font/jakarta_medium</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.BodyLarge.Jakarta" parent="TextAppearance.Material3.BodyLarge"><item name="fontFamily">@font/jakarta_regular</item><item name="android:fontFamily">@font/jakarta_regular</item><item name="android:textSize">15.5sp</item></style>
+    <style name="TextAppearance.Notivo.M3.BodyMedium.Jakarta" parent="TextAppearance.Material3.BodyMedium"><item name="fontFamily">@font/jakarta_regular</item><item name="android:fontFamily">@font/jakarta_regular</item><item name="android:textSize">14sp</item></style>
+    <style name="TextAppearance.Notivo.M3.BodySmall.Jakarta" parent="TextAppearance.Material3.BodySmall"><item name="fontFamily">@font/jakarta_regular</item><item name="android:fontFamily">@font/jakarta_regular</item><item name="android:textSize">12.5sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelLarge.Jakarta" parent="TextAppearance.Material3.LabelLarge"><item name="fontFamily">@font/jakarta_semibold</item><item name="android:fontFamily">@font/jakarta_semibold</item><item name="android:textStyle">normal</item><item name="android:textSize">14sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelMedium.Jakarta" parent="TextAppearance.Material3.LabelMedium"><item name="fontFamily">@font/jakarta_medium</item><item name="android:fontFamily">@font/jakarta_medium</item><item name="android:textStyle">normal</item><item name="android:textSize">12sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelSmall.Jakarta" parent="TextAppearance.Material3.LabelSmall"><item name="fontFamily">@font/jakarta_medium</item><item name="android:fontFamily">@font/jakarta_medium</item><item name="android:textStyle">normal</item><item name="android:textSize">11.5sp</item></style>
+
+    <!-- ==================== POPPINS ==================== -->
+    <style name="ThemeOverlay.Notivo.Font.Poppins" parent="">
+        <item name="textAppearanceNotivoDisplay">@style/TextAppearance.Notivo.Display.Poppins</item>
+        <item name="textAppearanceNotivoStatNumber">@style/TextAppearance.Notivo.StatNumber.Poppins</item>
+        <item name="textAppearanceNotivoTitleLarge">@style/TextAppearance.Notivo.TitleLarge.Poppins</item>
+        <item name="textAppearanceNotivoTitleMedium">@style/TextAppearance.Notivo.TitleMedium.Poppins</item>
+        <item name="textAppearanceNotivoSectionHeader">@style/TextAppearance.Notivo.SectionHeader.Poppins</item>
+        <item name="textAppearanceNotivoSubtitleLight">@style/TextAppearance.Notivo.SubtitleLight.Poppins</item>
+        <item name="textAppearanceNotivoMetaLight">@style/TextAppearance.Notivo.MetaLight.Poppins</item>
+
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.Notivo.M3.DisplayLarge.Poppins</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.Notivo.M3.DisplayMedium.Poppins</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.Notivo.M3.DisplaySmall.Poppins</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Notivo.M3.HeadlineLarge.Poppins</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Notivo.M3.HeadlineMedium.Poppins</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Notivo.M3.HeadlineSmall.Poppins</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Notivo.M3.TitleLarge.Poppins</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Notivo.M3.TitleMedium.Poppins</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Notivo.M3.TitleSmall.Poppins</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Notivo.M3.BodyLarge.Poppins</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Notivo.M3.BodyMedium.Poppins</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Notivo.M3.BodySmall.Poppins</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Notivo.M3.LabelLarge.Poppins</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Notivo.M3.LabelMedium.Poppins</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Notivo.M3.LabelSmall.Poppins</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.Display.Poppins" parent="TextAppearance.Notivo.Display.Outfit"><item name="fontFamily">@font/poppins_bold</item><item name="android:fontFamily">@font/poppins_bold</item></style>
+    <style name="TextAppearance.Notivo.StatNumber.Poppins" parent="TextAppearance.Notivo.StatNumber.Outfit"><item name="fontFamily">@font/poppins_bold</item><item name="android:fontFamily">@font/poppins_bold</item></style>
+    <style name="TextAppearance.Notivo.TitleLarge.Poppins" parent="TextAppearance.Notivo.TitleLarge.Outfit"><item name="fontFamily">@font/poppins_bold</item><item name="android:fontFamily">@font/poppins_bold</item></style>
+    <style name="TextAppearance.Notivo.TitleMedium.Poppins" parent="TextAppearance.Notivo.TitleMedium.Outfit"><item name="fontFamily">@font/poppins_semibold</item><item name="android:fontFamily">@font/poppins_semibold</item></style>
+    <style name="TextAppearance.Notivo.SectionHeader.Poppins" parent="TextAppearance.Notivo.SectionHeader.Outfit"><item name="fontFamily">@font/poppins_bold</item><item name="android:fontFamily">@font/poppins_bold</item></style>
+    <style name="TextAppearance.Notivo.SubtitleLight.Poppins" parent="TextAppearance.Notivo.SubtitleLight.Outfit"><item name="fontFamily">@font/poppins_regular</item><item name="android:fontFamily">@font/poppins_regular</item></style>
+    <style name="TextAppearance.Notivo.MetaLight.Poppins" parent="TextAppearance.Notivo.MetaLight.Outfit"><item name="fontFamily">@font/poppins_regular</item><item name="android:fontFamily">@font/poppins_regular</item></style>
+
+    <style name="TextAppearance.Notivo.M3.DisplayLarge.Poppins" parent="TextAppearance.Material3.DisplayLarge"><item name="fontFamily">@font/poppins_bold</item><item name="android:fontFamily">@font/poppins_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.DisplayMedium.Poppins" parent="TextAppearance.Material3.DisplayMedium"><item name="fontFamily">@font/poppins_bold</item><item name="android:fontFamily">@font/poppins_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.DisplaySmall.Poppins" parent="TextAppearance.Material3.DisplaySmall"><item name="fontFamily">@font/poppins_bold</item><item name="android:fontFamily">@font/poppins_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineLarge.Poppins" parent="TextAppearance.Material3.HeadlineLarge"><item name="fontFamily">@font/poppins_bold</item><item name="android:fontFamily">@font/poppins_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineMedium.Poppins" parent="TextAppearance.Material3.HeadlineMedium"><item name="fontFamily">@font/poppins_bold</item><item name="android:fontFamily">@font/poppins_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineSmall.Poppins" parent="TextAppearance.Material3.HeadlineSmall"><item name="fontFamily">@font/poppins_semibold</item><item name="android:fontFamily">@font/poppins_semibold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleLarge.Poppins" parent="TextAppearance.Material3.TitleLarge"><item name="fontFamily">@font/poppins_semibold</item><item name="android:fontFamily">@font/poppins_semibold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleMedium.Poppins" parent="TextAppearance.Material3.TitleMedium"><item name="fontFamily">@font/poppins_semibold</item><item name="android:fontFamily">@font/poppins_semibold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleSmall.Poppins" parent="TextAppearance.Material3.TitleSmall"><item name="fontFamily">@font/poppins_medium</item><item name="android:fontFamily">@font/poppins_medium</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.BodyLarge.Poppins" parent="TextAppearance.Material3.BodyLarge"><item name="fontFamily">@font/poppins_regular</item><item name="android:fontFamily">@font/poppins_regular</item><item name="android:textSize">15.5sp</item></style>
+    <style name="TextAppearance.Notivo.M3.BodyMedium.Poppins" parent="TextAppearance.Material3.BodyMedium"><item name="fontFamily">@font/poppins_regular</item><item name="android:fontFamily">@font/poppins_regular</item><item name="android:textSize">14sp</item></style>
+    <style name="TextAppearance.Notivo.M3.BodySmall.Poppins" parent="TextAppearance.Material3.BodySmall"><item name="fontFamily">@font/poppins_regular</item><item name="android:fontFamily">@font/poppins_regular</item><item name="android:textSize">12.5sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelLarge.Poppins" parent="TextAppearance.Material3.LabelLarge"><item name="fontFamily">@font/poppins_semibold</item><item name="android:fontFamily">@font/poppins_semibold</item><item name="android:textStyle">normal</item><item name="android:textSize">14sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelMedium.Poppins" parent="TextAppearance.Material3.LabelMedium"><item name="fontFamily">@font/poppins_medium</item><item name="android:fontFamily">@font/poppins_medium</item><item name="android:textStyle">normal</item><item name="android:textSize">12sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelSmall.Poppins" parent="TextAppearance.Material3.LabelSmall"><item name="fontFamily">@font/poppins_medium</item><item name="android:fontFamily">@font/poppins_medium</item><item name="android:textStyle">normal</item><item name="android:textSize">11.5sp</item></style>
+
+    <!-- ==================== LATO ==================== -->
+    <style name="ThemeOverlay.Notivo.Font.Lato" parent="">
+        <item name="textAppearanceNotivoDisplay">@style/TextAppearance.Notivo.Display.Lato</item>
+        <item name="textAppearanceNotivoStatNumber">@style/TextAppearance.Notivo.StatNumber.Lato</item>
+        <item name="textAppearanceNotivoTitleLarge">@style/TextAppearance.Notivo.TitleLarge.Lato</item>
+        <item name="textAppearanceNotivoTitleMedium">@style/TextAppearance.Notivo.TitleMedium.Lato</item>
+        <item name="textAppearanceNotivoSectionHeader">@style/TextAppearance.Notivo.SectionHeader.Lato</item>
+        <item name="textAppearanceNotivoSubtitleLight">@style/TextAppearance.Notivo.SubtitleLight.Lato</item>
+        <item name="textAppearanceNotivoMetaLight">@style/TextAppearance.Notivo.MetaLight.Lato</item>
+
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.Notivo.M3.DisplayLarge.Lato</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.Notivo.M3.DisplayMedium.Lato</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.Notivo.M3.DisplaySmall.Lato</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Notivo.M3.HeadlineLarge.Lato</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Notivo.M3.HeadlineMedium.Lato</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Notivo.M3.HeadlineSmall.Lato</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Notivo.M3.TitleLarge.Lato</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Notivo.M3.TitleMedium.Lato</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Notivo.M3.TitleSmall.Lato</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Notivo.M3.BodyLarge.Lato</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Notivo.M3.BodyMedium.Lato</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Notivo.M3.BodySmall.Lato</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Notivo.M3.LabelLarge.Lato</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Notivo.M3.LabelMedium.Lato</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Notivo.M3.LabelSmall.Lato</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.Display.Lato" parent="TextAppearance.Notivo.Display.Outfit"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item></style>
+    <style name="TextAppearance.Notivo.StatNumber.Lato" parent="TextAppearance.Notivo.StatNumber.Outfit"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item></style>
+    <style name="TextAppearance.Notivo.TitleLarge.Lato" parent="TextAppearance.Notivo.TitleLarge.Outfit"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item></style>
+    <style name="TextAppearance.Notivo.TitleMedium.Lato" parent="TextAppearance.Notivo.TitleMedium.Outfit"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item></style>
+    <style name="TextAppearance.Notivo.SectionHeader.Lato" parent="TextAppearance.Notivo.SectionHeader.Outfit"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item></style>
+    <style name="TextAppearance.Notivo.SubtitleLight.Lato" parent="TextAppearance.Notivo.SubtitleLight.Outfit"><item name="fontFamily">@font/lato_regular</item><item name="android:fontFamily">@font/lato_regular</item></style>
+    <style name="TextAppearance.Notivo.MetaLight.Lato" parent="TextAppearance.Notivo.MetaLight.Outfit"><item name="fontFamily">@font/lato_regular</item><item name="android:fontFamily">@font/lato_regular</item></style>
+
+    <style name="TextAppearance.Notivo.M3.DisplayLarge.Lato" parent="TextAppearance.Material3.DisplayLarge"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.DisplayMedium.Lato" parent="TextAppearance.Material3.DisplayMedium"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.DisplaySmall.Lato" parent="TextAppearance.Material3.DisplaySmall"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineLarge.Lato" parent="TextAppearance.Material3.HeadlineLarge"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineMedium.Lato" parent="TextAppearance.Material3.HeadlineMedium"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.HeadlineSmall.Lato" parent="TextAppearance.Material3.HeadlineSmall"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleLarge.Lato" parent="TextAppearance.Material3.TitleLarge"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleMedium.Lato" parent="TextAppearance.Material3.TitleMedium"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.M3.TitleSmall.Lato" parent="TextAppearance.Material3.TitleSmall"><item name="fontFamily">@font/lato_regular</item><item name="android:fontFamily">@font/lato_regular</item></style>
+    <style name="TextAppearance.Notivo.M3.BodyLarge.Lato" parent="TextAppearance.Material3.BodyLarge"><item name="fontFamily">@font/lato_regular</item><item name="android:fontFamily">@font/lato_regular</item><item name="android:textSize">15.5sp</item></style>
+    <style name="TextAppearance.Notivo.M3.BodyMedium.Lato" parent="TextAppearance.Material3.BodyMedium"><item name="fontFamily">@font/lato_regular</item><item name="android:fontFamily">@font/lato_regular</item><item name="android:textSize">14sp</item></style>
+    <style name="TextAppearance.Notivo.M3.BodySmall.Lato" parent="TextAppearance.Material3.BodySmall"><item name="fontFamily">@font/lato_regular</item><item name="android:fontFamily">@font/lato_regular</item><item name="android:textSize">12.5sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelLarge.Lato" parent="TextAppearance.Material3.LabelLarge"><item name="fontFamily">@font/lato_bold</item><item name="android:fontFamily">@font/lato_bold</item><item name="android:textStyle">normal</item><item name="android:textSize">14sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelMedium.Lato" parent="TextAppearance.Material3.LabelMedium"><item name="fontFamily">@font/lato_regular</item><item name="android:fontFamily">@font/lato_regular</item><item name="android:textSize">12sp</item></style>
+    <style name="TextAppearance.Notivo.M3.LabelSmall.Lato" parent="TextAppearance.Material3.LabelSmall"><item name="fontFamily">@font/lato_regular</item><item name="android:fontFamily">@font/lato_regular</item><item name="android:textSize">11.5sp</item></style>
+
+    <!-- ==================== SYSTEM (Roboto) ==================== -->
+    <style name="ThemeOverlay.Notivo.Font.System" parent="">
+        <item name="textAppearanceNotivoDisplay">@style/TextAppearance.Notivo.Display.System</item>
+        <item name="textAppearanceNotivoStatNumber">@style/TextAppearance.Notivo.StatNumber.System</item>
+        <item name="textAppearanceNotivoTitleLarge">@style/TextAppearance.Notivo.TitleLarge.System</item>
+        <item name="textAppearanceNotivoTitleMedium">@style/TextAppearance.Notivo.TitleMedium.System</item>
+        <item name="textAppearanceNotivoSectionHeader">@style/TextAppearance.Notivo.SectionHeader.System</item>
+        <item name="textAppearanceNotivoSubtitleLight">@style/TextAppearance.Notivo.SubtitleLight.System</item>
+        <item name="textAppearanceNotivoMetaLight">@style/TextAppearance.Notivo.MetaLight.System</item>
+
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.Material3.DisplayLarge</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.Material3.DisplayMedium</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.Material3.DisplaySmall</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Material3.HeadlineLarge</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Material3.HeadlineMedium</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Material3.HeadlineSmall</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Material3.TitleLarge</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Material3.TitleMedium</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Material3.TitleSmall</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Material3.BodyLarge</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Material3.BodyMedium</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Material3.BodySmall</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Material3.LabelLarge</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Material3.LabelMedium</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Material3.LabelSmall</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.Display.System" parent="TextAppearance.Notivo.Display.Outfit"><item name="fontFamily">sans-serif</item><item name="android:fontFamily">sans-serif</item><item name="android:textStyle">bold</item></style>
+    <style name="TextAppearance.Notivo.StatNumber.System" parent="TextAppearance.Notivo.StatNumber.Outfit"><item name="fontFamily">sans-serif</item><item name="android:fontFamily">sans-serif</item><item name="android:textStyle">bold</item></style>
+    <style name="TextAppearance.Notivo.TitleLarge.System" parent="TextAppearance.Notivo.TitleLarge.Outfit"><item name="fontFamily">sans-serif</item><item name="android:fontFamily">sans-serif</item><item name="android:textStyle">bold</item></style>
+    <style name="TextAppearance.Notivo.TitleMedium.System" parent="TextAppearance.Notivo.TitleMedium.Outfit"><item name="fontFamily">sans-serif-medium</item><item name="android:fontFamily">sans-serif-medium</item><item name="android:textStyle">normal</item></style>
+    <style name="TextAppearance.Notivo.SectionHeader.System" parent="TextAppearance.Notivo.SectionHeader.Outfit"><item name="fontFamily">sans-serif-medium</item><item name="android:fontFamily">sans-serif-medium</item><item name="android:textStyle">bold</item></style>
+    <style name="TextAppearance.Notivo.SubtitleLight.System" parent="TextAppearance.Notivo.SubtitleLight.Outfit"><item name="fontFamily">sans-serif-light</item><item name="android:fontFamily">sans-serif-light</item></style>
+    <style name="TextAppearance.Notivo.MetaLight.System" parent="TextAppearance.Notivo.MetaLight.Outfit"><item name="fontFamily">sans-serif-light</item><item name="android:fontFamily">sans-serif-light</item></style>
+</resources>

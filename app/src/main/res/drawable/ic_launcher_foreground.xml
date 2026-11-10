@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Note card -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M34,26h32l12,12v42c0,2.2 -1.8,4 -4,4H34c-2.2,0 -4,-1.8 -4,-4V30C30,27.8 31.8,26 34,26z" />
+    <!-- Folded corner -->
+    <path
+        android:fillColor="#FFF3E0"
+        android:pathData="M66,26v12h12z" />
+    <!-- Note lines -->
+    <path
+        android:fillColor="#F5A623"
+        android:pathData="M38,44h22v3.5H38zM38,52h28v3.5H38zM38,60h18v3.5H38z" />
+    <!-- Security lock badge -->
+    <path
+        android:fillColor="#1C1B1F"
+        android:pathData="M68,62c-5.5,0 -10,4.5 -10,10s4.5,10 10,10s10,-4.5 10,-10S73.5,62 68,62z" />
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M71,70h-0.5v-1.5c0,-1.4 -1.1,-2.5 -2.5,-2.5s-2.5,1.1 -2.5,2.5V70H65c-0.6,0 -1,0.4 -1,1v5c0,0.6 0.4,1 1,1h6c0.6,0 1,-0.4 1,-1v-5C72,70.4 71.6,70 71,70zM66.7,68.5c0,-0.7 0.6,-1.3 1.3,-1.3s1.3,0.6 1.3,1.3V70h-2.6V68.5z" />
+</vector>

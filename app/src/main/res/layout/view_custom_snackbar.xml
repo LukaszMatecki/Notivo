@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:paddingHorizontal="16dp"
+    android:paddingBottom="12dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/snackbarCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:clipChildren="true"
+        app:cardBackgroundColor="@color/notivo_snackbar_bg"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:id="@+id/llSnackbarContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="48dp"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="10dp">
+
+            <ImageView
+                android:id="@+id/ivSnackbarIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="12dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_check"
+                app:tint="@color/notivo_snackbar_action" />
+
+            <TextView
+                android:id="@+id/tvSnackbarMessage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="3"
+                android:textColor="@color/notivo_snackbar_text"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btnSnackbarAction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:background="@drawable/bg_option_item"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:minHeight="36dp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:textColor="@color/notivo_snackbar_action"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</FrameLayout>

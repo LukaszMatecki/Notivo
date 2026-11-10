@@ -1,0 +1,205 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.Notivo" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/notivo_primary</item>
+        <item name="colorOnPrimary">@color/notivo_on_primary</item>
+        <item name="colorPrimaryContainer">@color/notivo_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/notivo_on_primary_container</item>
+        <item name="colorSecondary">@color/notivo_primary</item>
+        <item name="colorOnSecondary">@color/notivo_on_primary</item>
+        <item name="colorSecondaryContainer">@color/notivo_primary_container</item>
+        <item name="colorOnSecondaryContainer">@color/notivo_on_primary_container</item>
+        <item name="colorSurface">@color/notivo_surface</item>
+        <item name="colorSurfaceContainer">@color/notivo_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/notivo_surface_container_high</item>
+        <item name="colorOnSurface">@color/notivo_on_surface</item>
+        <item name="colorOnSurfaceVariant">@color/notivo_on_surface_variant</item>
+        <item name="colorOutline">@color/notivo_outline</item>
+        <item name="colorError">@color/notivo_error</item>
+        <item name="android:windowBackground">@color/notivo_surface</item>
+        <item name="android:colorBackground">@color/notivo_surface</item>
+        <item name="elevationOverlayEnabled">false</item>
+
+        <!-- Typography defaults (VoltUp Outfit hierarchy via TextAppearance, never overriding View textAppearance at Theme root) -->
+        <item name="android:textViewStyle">@style/Widget.Notivo.TextView</item>
+        <item name="editTextStyle">@style/Widget.Notivo.EditText</item>
+        <item name="textAppearanceNotivoDisplay">@style/TextAppearance.Notivo.Display.Outfit</item>
+        <item name="textAppearanceNotivoStatNumber">@style/TextAppearance.Notivo.StatNumber.Outfit</item>
+        <item name="textAppearanceNotivoTitleLarge">@style/TextAppearance.Notivo.TitleLarge.Outfit</item>
+        <item name="textAppearanceNotivoTitleMedium">@style/TextAppearance.Notivo.TitleMedium.Outfit</item>
+        <item name="textAppearanceNotivoSectionHeader">@style/TextAppearance.Notivo.SectionHeader.Outfit</item>
+        <item name="textAppearanceNotivoSubtitleLight">@style/TextAppearance.Notivo.SubtitleLight.Outfit</item>
+        <item name="textAppearanceNotivoMetaLight">@style/TextAppearance.Notivo.MetaLight.Outfit</item>
+
+        <item name="textAppearanceDisplayLarge">@style/TextAppearance.Notivo.M3.DisplayLarge.Outfit</item>
+        <item name="textAppearanceDisplayMedium">@style/TextAppearance.Notivo.M3.DisplayMedium.Outfit</item>
+        <item name="textAppearanceDisplaySmall">@style/TextAppearance.Notivo.M3.DisplaySmall.Outfit</item>
+        <item name="textAppearanceHeadlineLarge">@style/TextAppearance.Notivo.M3.HeadlineLarge.Outfit</item>
+        <item name="textAppearanceHeadlineMedium">@style/TextAppearance.Notivo.M3.HeadlineMedium.Outfit</item>
+        <item name="textAppearanceHeadlineSmall">@style/TextAppearance.Notivo.M3.HeadlineSmall.Outfit</item>
+        <item name="textAppearanceTitleLarge">@style/TextAppearance.Notivo.M3.TitleLarge.Outfit</item>
+        <item name="textAppearanceTitleMedium">@style/TextAppearance.Notivo.M3.TitleMedium.Outfit</item>
+        <item name="textAppearanceTitleSmall">@style/TextAppearance.Notivo.M3.TitleSmall.Outfit</item>
+        <item name="textAppearanceBodyLarge">@style/TextAppearance.Notivo.M3.BodyLarge.Outfit</item>
+        <item name="textAppearanceBodyMedium">@style/TextAppearance.Notivo.M3.BodyMedium.Outfit</item>
+        <item name="textAppearanceBodySmall">@style/TextAppearance.Notivo.M3.BodySmall.Outfit</item>
+        <item name="textAppearanceLabelLarge">@style/TextAppearance.Notivo.M3.LabelLarge.Outfit</item>
+        <item name="textAppearanceLabelMedium">@style/TextAppearance.Notivo.M3.LabelMedium.Outfit</item>
+        <item name="textAppearanceLabelSmall">@style/TextAppearance.Notivo.M3.LabelSmall.Outfit</item>
+
+        <!-- Global rounded shapes & borderless modals -->
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearance.Notivo.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/ShapeAppearance.Notivo.Card</item>
+        <item name="shapeAppearanceLargeComponent">@style/ShapeAppearance.Notivo.Dialog</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.Notivo.BottomSheetDialog</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.Notivo.MaterialAlertDialog</item>
+        <item name="textInputStyle">@style/Widget.Notivo.TextInputLayout</item>
+        <item name="materialSwitchStyle">@style/Widget.Notivo.Switch</item>
+    </style>
+
+    <style name="Theme.Notivo" parent="Base.Theme.Notivo" />
+
+    <style name="TextAppearance.Notivo.DisplayLarge" parent="TextAppearance.Material3.DisplaySmall">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/notivo_on_surface</item>
+        <item name="android:letterSpacing">-0.02</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/notivo_on_surface</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/notivo_on_surface</item>
+    </style>
+
+    <style name="TextAppearance.Notivo.SectionHeader" parent="TextAppearance.Material3.LabelLarge">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/notivo_primary_dark</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <style name="ShapeAppearance.Notivo.Small" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Notivo.Card" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Notivo.Dialog" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Notivo.BottomSheet" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">28dp</item>
+        <item name="cornerSizeTopRight">28dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Notivo.ChipPill" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ShapeAppearance.Notivo.Pill" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Notivo.Circle" parent="ShapeAppearance.Material3.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="ThemeOverlay.Notivo.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.Notivo.BottomSheet</item>
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+
+    <style name="Widget.Notivo.BottomSheet" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Notivo.BottomSheet</item>
+        <item name="backgroundTint">@color/notivo_surface_container</item>
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <style name="ThemeOverlay.Notivo.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearance.Notivo.Dialog</item>
+        <item name="colorSurface">@color/notivo_surface_container</item>
+        <item name="colorSurfaceContainerHigh">@color/notivo_surface_container</item>
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+
+    <style name="Widget.Notivo.TextInputLayout" parent="Widget.Material3.TextInputLayout.FilledBox">
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeWidthFocused">0dp</item>
+        <item name="boxBackgroundColor">@color/notivo_surface</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="hintTextColor">@color/notivo_primary_dark</item>
+    </style>
+
+    <style name="Widget.Notivo.TonalButton" parent="Widget.Material3.Button.UnelevatedButton">
+        <item name="cornerRadius">16dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="backgroundTint">@color/notivo_surface</item>
+        <item name="rippleColor">?attr/colorControlHighlight</item>
+        <item name="android:textColor">@color/notivo_on_surface</item>
+        <item name="iconTint">@color/notivo_primary_dark</item>
+    </style>
+
+    <style name="Widget.Notivo.PrimaryPillButton" parent="Widget.Material3.Button">
+        <item name="cornerRadius">24dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="backgroundTint">@color/notivo_primary</item>
+        <item name="android:textColor">@color/notivo_on_primary</item>
+    </style>
+
+    <style name="Widget.Notivo.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textAppearance">?attr/textAppearanceBodyMedium</item>
+    </style>
+
+    <style name="Widget.Notivo.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textAppearance">?attr/textAppearanceBodyLarge</item>
+    </style>
+
+    <style name="Widget.Notivo.Switch" parent="Widget.Material3.CompoundButton.MaterialSwitch">
+        <item name="thumbTint">@color/selector_switch_thumb</item>
+        <item name="trackTint">@color/selector_switch_track</item>
+        <item name="trackDecorationTint">@color/selector_switch_track_stroke</item>
+    </style>
+
+    <style name="Widget.Notivo.PinKey" parent="Widget.Material3.Button.UnelevatedButton">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceNotivoStatNumber</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">@color/notivo_on_surface</item>
+        <item name="backgroundTint">@color/notivo_surface_container</item>
+        <item name="rippleColor">?attr/colorControlHighlight</item>
+        <item name="cornerRadius">34dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="elevation">0dp</item>
+        <item name="android:elevation">0dp</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+</resources>

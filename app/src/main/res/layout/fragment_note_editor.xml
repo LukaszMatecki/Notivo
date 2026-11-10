@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/editorRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <!-- Top Action Bar -->
+    <LinearLayout
+        android:id="@+id/editorTopBar"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_toolbar_ripple"
+            android:contentDescription="@string/action_back"
+            app:srcCompat="@drawable/ic_arrow_back"
+            app:tint="?attr/colorOnSurface" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnActionFolder"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_toolbar_ripple"
+            android:contentDescription="@string/editor_action_folder"
+            app:srcCompat="@drawable/ic_folder"
+            app:tint="?attr/colorOnSurface" />
+
+        <ImageButton
+            android:id="@+id/btnUndo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_toolbar_ripple"
+            android:contentDescription="@string/editor_undo"
+            app:srcCompat="@drawable/ic_undo"
+            app:tint="?attr/colorOnSurface" />
+
+        <ImageButton
+            android:id="@+id/btnRedo"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_toolbar_ripple"
+            android:contentDescription="@string/editor_redo"
+            app:srcCompat="@drawable/ic_redo"
+            app:tint="?attr/colorOnSurface" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaveNote"
+            style="@style/Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/action_save"
+            android:textColor="@color/notivo_primary_dark"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/editorScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@id/editorBottomToolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editorTopBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvEditorDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?attr/textAppearanceNotivoMetaLight"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    tools:text="Wtorek, 10 listopada 2026 · 16:22" />
+
+                <TextView
+                    android:id="@+id/tvEditorFolderBadge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_summary_stat"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="3dp"
+                    android:textAppearance="?attr/textAppearanceLabelSmall"
+                    android:textColor="?attr/colorOnSurfaceVariant"
+                    android:visibility="gone"
+                    tools:text="Studia"
+                    tools:visibility="visible" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etNoteTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:hint="@string/editor_title_hint"
+                android:imeOptions="actionNext"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textMultiLine"
+                android:textAppearance="?attr/textAppearanceNotivoTitleLarge"
+                android:textSize="22sp"
+                android:textColorHint="?attr/colorOnSurfaceVariant" />
+
+            <LinearLayout
+                android:id="@+id/editorImagesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etNoteContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:background="@null"
+                android:gravity="top|start"
+                android:hint="@string/editor_content_hint"
+                android:importantForAutofill="no"
+                android:inputType="textCapSentences|textMultiLine"
+                android:lineSpacingExtra="5dp"
+                android:minHeight="320dp"
+                android:textAppearance="?attr/textAppearanceBodyLarge"
+                android:textColorHint="?attr/colorOnSurfaceVariant" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Floating Pill Bottom Toolbar with Centered Circular Ripples -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/editorBottomToolbar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="?attr/colorSurfaceContainer"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingHorizontal="8dp">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btnActionColor"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_toolbar_ripple"
+                    android:contentDescription="@string/editor_action_color"
+                    app:srcCompat="@drawable/ic_palette"
+                    app:tint="?attr/colorOnSurface" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btnActionLock"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_toolbar_ripple"
+                    android:contentDescription="@string/editor_action_lock"
+                    app:srcCompat="@drawable/ic_lock_open"
+                    app:tint="?attr/colorOnSurface" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btnActionImage"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_toolbar_ripple"
+                    android:contentDescription="@string/editor_action_image"
+                    app:srcCompat="@drawable/ic_image"
+                    app:tint="?attr/colorOnSurface" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btnActionPin"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_toolbar_ripple"
+                    android:contentDescription="@string/editor_action_pin"
+                    app:srcCompat="@drawable/ic_pin"
+                    app:tint="?attr/colorOnSurface" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btnActionChecklist"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_toolbar_ripple"
+                    android:contentDescription="@string/editor_action_checklist"
+                    app:srcCompat="@drawable/ic_bullet_list"
+                    app:tint="?attr/colorOnSurface" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/btnActionMore"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/bg_toolbar_ripple"
+                    android:contentDescription="@string/editor_action_more"
+                    app:srcCompat="@drawable/ic_more_vert"
+                    app:tint="?attr/colorOnSurface" />
+            </FrameLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

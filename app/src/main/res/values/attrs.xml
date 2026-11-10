@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textAppearanceNotivoDisplay" format="reference" />
+    <attr name="textAppearanceNotivoStatNumber" format="reference" />
+    <attr name="textAppearanceNotivoTitleLarge" format="reference" />
+    <attr name="textAppearanceNotivoTitleMedium" format="reference" />
+    <attr name="textAppearanceNotivoSectionHeader" format="reference" />
+    <attr name="textAppearanceNotivoSubtitleLight" format="reference" />
+    <attr name="textAppearanceNotivoMetaLight" format="reference" />
+</resources>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Notivo</string>
+
+    <!-- Bottom Navigation -->
+    <string name="nav_notes">Notatki</string>
+    <string name="nav_tasks">Zadania</string>
+    <string name="nav_dashboard">Pulpit</string>
+
+    <!-- Common Actions -->
+    <string name="action_save">Zapisz</string>
+    <string name="action_cancel">Anuluj</string>
+    <string name="action_delete">Usuń</string>
+    <string name="action_restore">Przywróć</string>
+    <string name="action_undo">Cofnij</string>
+    <string name="action_close">Zamknij</string>
+    <string name="action_back">Wróć</string>
+    <string name="action_settings">Ustawienia</string>
+    <string name="action_folders">Foldery</string>
+    <string name="action_clear_search">Wyczyść wyszukiwanie</string>
+
+    <!-- Notes List -->
+    <string name="notes_title">Notatki</string>
+    <string name="search_notes_hint">Szukaj notatek…</string>
+    <string name="filter_all">Wszystkie</string>
+    <string name="filter_unassigned">Bez kategorii</string>
+    <string name="sort_updated_desc">Wg daty modyfikacji</string>
+    <string name="sort_created_desc">Wg daty utworzenia</string>
+    <string name="sort_title_asc">Alfabetycznie (A–Z)</string>
+    <string name="sort_color">Wg koloru</string>
+    <string name="toggle_layout_grid">Przełącz na widok siatki</string>
+    <string name="toggle_layout_list">Przełącz na widok listy</string>
+    <string name="note_locked_preview">Notatka zabezpieczona</string>
+    <string name="note_empty_preview">Brak treści</string>
+    <string name="note_untitled">Bez tytułu</string>
+    <string name="notes_empty_title">Brak notatek</string>
+    <string name="notes_empty_subtitle">Zacznij od utworzenia swojej pierwszej notatki</string>
+    <string name="notes_empty_cta">Utwórz notatkę</string>
+    <string name="private_folder_locked_title">Folder prywatny</string>
+    <string name="private_folder_locked_subtitle">Odblokuj biometrią lub kodem PIN, aby wyświetlić zawartość folderu</string>
+    <string name="private_folder_unlock_cta">Odblokuj folder</string>
+    <string name="search_empty_title">Brak wyników</string>
+    <string name="search_empty_subtitle">Nie znaleziono notatek dla zapytania „%1$s”</string>
+    <string name="note_moved_to_trash">Notatka przeniesiona do kosza</string>
+    <string name="note_pinned">Przypięto notatkę</string>
+    <string name="note_unpinned">Odpięto notatkę</string>
+
+    <!-- Expandable FAB -->
+    <string name="fab_main_description">Dodaj nowy element</string>
+    <string name="fab_new_note">Nowa notatka</string>
+    <string name="fab_new_folder">Nowy folder</string>
+    <string name="fab_new_task">Nowe zadanie</string>
+
+    <!-- Note Editor -->
+    <string name="editor_title_hint">Tytuł notatki</string>
+    <string name="editor_content_hint">Zacznij pisać notatkę…</string>
+    <string name="editor_undo">Cofnij zmianę</string>
+    <string name="editor_redo">Ponów zmianę</string>
+    <string name="editor_action_color">Kolor</string>
+    <string name="editor_action_lock">Blokada</string>
+    <string name="editor_action_unlock">Odblokuj</string>
+    <string name="editor_action_folder">Folder</string>
+    <string name="editor_action_image">Dodaj zdjęcie</string>
+    <string name="editor_remove_image">Usuń zdjęcie</string>
+    <string name="editor_image_error">Nie udało się wczytać zdjęcia</string>
+    <string name="card_extra_images_badge">+%1$d</string>
+    <string name="editor_action_pin">Przypnij</string>
+    <string name="editor_action_checklist">Lista punktowana</string>
+    <string name="editor_action_more">Więcej</string>
+    <string name="editor_menu_share">Udostępnij treść</string>
+    <string name="editor_menu_create_task">Utwórz zadanie z notatki</string>
+    <string name="editor_menu_delete">Przenieś do kosza</string>
+    <string name="editor_note_saved">Notatka zapisana</string>
+    <string name="editor_note_locked_msg">Notatka została zabezpieczona</string>
+    <string name="editor_note_lock_pending">Blokada włączona — notatka zostanie zabezpieczona po zapisaniu</string>
+    <string name="editor_note_unlocked_msg">Usunięto blokadę notatki</string>
+    <string name="editor_more_options">Opcje notatki</string>
+    <string name="note_options_title">Akcje notatki</string>
+    <string name="folder_options_title">Opcje folderu</string>
+    <string name="editor_unlock_confirm_title">Zdjąć blokadę?</string>
+    <string name="editor_unlock_confirm_message">Treść notatki zostanie odszyfrowana i zapisana w postaci jawnej.</string>
+    <string name="color_picker_title">Kolor notatki</string>
+    <string name="folder_picker_title">Wybierz folder</string>
+    <string name="folder_none">Bez folderu</string>
+    <string name="task_created_from_note">Utworzono zadanie powiązane z notatką</string>
+
+    <!-- Tasks -->
+    <string name="tasks_title">Zadania</string>
+    <string name="search_tasks_hint">Szukaj zadań…</string>
+    <string name="tasks_tab_active">Aktywne</string>
+    <string name="tasks_tab_completed">Ukończone</string>
+    <string name="tasks_tab_archived">Archiwum</string>
+    <string name="tasks_section_today">Dzisiaj i zaległe</string>
+    <string name="tasks_section_upcoming">Nadchodzące</string>
+    <string name="tasks_section_no_date">Bez terminu</string>
+    <string name="tasks_section_completed">Ukończone</string>
+    <string name="tasks_section_archived">Zarchiwizowane</string>
+    <string name="tasks_empty_title">Brak zadań</string>
+    <string name="tasks_empty_subtitle">Zaplanuj swój dzień, dodając pierwsze zadanie</string>
+    <string name="tasks_completed_empty_title">Brak ukończonych zadań</string>
+    <string name="tasks_completed_empty_subtitle">Ukończone zadania pojawią się w tej zakładce</string>
+    <string name="tasks_archived_empty_title">Archiwum jest puste</string>
+    <string name="tasks_archived_empty_subtitle">Ukończone i zarchiwizowane zadania pojawią się w tej zakładce</string>
+    <string name="tasks_empty_cta">Dodaj zadanie</string>
+    <string name="task_deleted_msg">Zadanie usunięte</string>
+    <string name="task_options_title">Opcje zadania</string>
+    <string name="task_action_complete">Oznacz jako ukończone</string>
+    <string name="task_action_reopen">Przywróć do aktywnych</string>
+    <string name="task_action_archive">Przenieś do archiwum</string>
+    <string name="task_action_unarchive">Przywróć z archiwum</string>
+    <string name="task_archived_msg">Przeniesiono zadanie do archiwum</string>
+    <string name="task_unarchived_msg">Przywrócono zadanie z archiwum</string>
+    <string name="task_new_title">Nowe zadanie</string>
+    <string name="task_edit_title">Edytuj zadanie</string>
+    <string name="task_field_title">Nazwa zadania</string>
+    <string name="task_field_description">Opis (opcjonalnie)</string>
+    <string name="task_field_due_date">Termin</string>
+    <string name="task_due_date_none">Brak terminu</string>
+    <string name="task_clear_date">Wyczyść termin</string>
+    <string name="task_priority_label">Priorytet</string>
+    <string name="priority_low">Niski</string>
+    <string name="priority_medium">Średni</string>
+    <string name="priority_high">Wysoki</string>
+
+    <!-- Dashboard -->
+    <string name="dashboard_subtitle_pending">Masz %1$d aktywnych zadań na liście</string>
+    <string name="dashboard_subtitle_clear">Sprawdź podsumowanie swojej aktywności.</string>
+    <string name="dashboard_summary_title">Podsumowanie</string>
+    <string name="dashboard_stat_notes">notatek</string>
+    <string name="dashboard_stat_tasks">zadań</string>
+    <string name="dashboard_stat_locked">prywatnych</string>
+    <string name="dashboard_upcoming_tasks">Nadchodzące zadania</string>
+    <string name="dashboard_see_all">Zobacz wszystkie →</string>
+    <string name="dashboard_recent_notes">Ostatnie notatki</string>
+    <string name="dashboard_folders">Foldery</string>
+    <string name="dashboard_no_upcoming_tasks">Brak zaplanowanych zadań. Dodaj nowe, aby zachować rytm dnia.</string>
+    <string name="dashboard_no_recent_notes">Twoje ostatnie notatki pojawią się tutaj po utworzeniu.</string>
+    <string name="exit_double_tap_msg">Naciśnij ponownie Wstecz, aby wyjść</string>
+
+    <!-- Folders -->
+    <string name="folders_title">Foldery</string>
+    <string name="folder_new">Nowy folder</string>
+    <string name="folder_edit">Edytuj folder</string>
+    <string name="folder_name_hint">Nazwa folderu</string>
+    <string name="folder_color_label">Kolor folderu</string>
+    <string name="folder_private_label">Folder prywatny (wymaga PIN / biometrii)</string>
+    <string name="folder_note_count_plurals">%1$d notatek</string>
+    <string name="folder_delete_title">Usunąć folder?</string>
+    <string name="folder_delete_message">Notatki z tego folderu nie zostaną usunięte — trafią do kategorii „Bez kategorii”.</string>
+    <string name="folder_action_rename">Edytuj folder</string>
+    <string name="folder_action_delete">Usuń folder</string>
+
+    <!-- Security / PIN / Biometrics -->
+    <string name="pin_setup_title">Ustaw kod PIN</string>
+    <string name="pin_setup_subtitle">Wprowadź 4-cyfrowy kod chroniący Twoje notatki</string>
+    <string name="pin_confirm_title">Powtórz kod PIN</string>
+    <string name="pin_confirm_subtitle">Wpisz ponownie ten sam 4-cyfrowy kod</string>
+    <string name="pin_mismatch_error">Kody PIN nie są identyczne. Spróbuj ponownie.</string>
+    <string name="pin_setup_success">Kod PIN został ustawiony</string>
+    <string name="pin_verify_title">Wprowadź kod PIN</string>
+    <string name="pin_verify_subtitle">Autoryzacja wymagana do odblokowania treści</string>
+    <string name="pin_invalid_attempts">Błędny kod PIN. Pozostało prób: %1$d</string>
+    <string name="pin_locked_out">Zbyt wiele błędnych prób. Spróbuj ponownie za %1$d s</string>
+    <string name="pin_use_biometric">Użyj biometrii</string>
+    <string name="biometric_prompt_title">Odblokuj Notivo</string>
+    <string name="biometric_prompt_subtitle">Potwierdź tożsamość odciskiem palca lub twarzą</string>
+    <string name="biometric_prompt_fallback">Użyj kodu PIN</string>
+    <string name="pin_digit_desc">Cyfra %1$s</string>
+    <string name="pin_backspace_desc">Usuń ostatnią cyfrę</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Ustawienia</string>
+    <string name="settings_section_style">Styl i personalizacja</string>
+    <string name="settings_font_family">Krój czcionki</string>
+    <string name="settings_font_size">Rozmiar czcionki</string>
+    <string name="settings_sort_order">Sortowanie notatek</string>
+    <string name="settings_layout_mode">Tryb podglądu</string>
+    <string name="settings_theme">Motyw aplikacji</string>
+    <string name="settings_section_security">Bezpieczeństwo i prywatność</string>
+    <string name="settings_biometric">Blokada biometryczna</string>
+    <string name="settings_biometric_desc">Pozwalaj na szybkie odblokowanie odciskiem palca</string>
+    <string name="settings_biometric_unavailable">Czujnik biometryczny jest niedostępny lub nieskonfigurowany</string>
+    <string name="settings_change_pin">Ustaw / zmień kod PIN</string>
+    <string name="settings_pin_status_set">Kod PIN aktywny</string>
+    <string name="settings_pin_status_unset">Nie ustawiono</string>
+    <string name="settings_remove_pin">Usuń kod PIN</string>
+    <string name="settings_pin_removed">Usunięto kod PIN</string>
+    <string name="settings_hardware_crypto">Sprzętowe szyfrowanie</string>
+    <string name="settings_crypto_strongbox">AES-256-GCM · StrongBox Hardware Keystore</string>
+    <string name="settings_crypto_tee">AES-256-GCM · TEE Hardware Keystore</string>
+    <string name="settings_crypto_software">AES-256-GCM · Android Keystore</string>
+    <string name="settings_section_reminders">Przypomnienia</string>
+    <string name="settings_high_priority_notifs">Przypomnienia o wysokim priorytecie</string>
+    <string name="settings_high_priority_notifs_desc">Wyróżniaj zadania o wysokim priorytecie w planerze</string>
+    <string name="settings_section_data">Dane</string>
+    <string name="settings_export_json">Eksport notatek (JSON)</string>
+    <string name="settings_export_success">Wyeksportowano notatki do pliku JSON</string>
+    <string name="settings_export_error">Nie udało się wyeksportować notatek</string>
+    <string name="settings_trash">Ostatnio usunięte</string>
+    <string name="settings_section_about">O aplikacji</string>
+    <string name="settings_version">Wersja</string>
+    <string name="settings_author">Autor</string>
+    <string name="settings_author_value">Łukasz Matecki</string>
+    <string name="settings_privacy_info">Polityka prywatności</string>
+    <string name="settings_privacy_dialog_msg">Notivo przechowuje wszystkie notatki, zadania oraz klucze szyfrowania wyłącznie lokalnie na Twoim urządzeniu. Zaszyfrowane notatki używają algorytmu AES-256-GCM i sprzętowego magazynu Android Keystore (TEE/StrongBox). Żadne dane nie są wysyłane do zewnętrznych serwerów.</string>
+
+    <string name="font_small">Mała</string>
+    <string name="font_medium">Średnia</string>
+    <string name="font_large">Duża</string>
+    <string name="font_family_outfit">Outfit</string>
+    <string name="font_family_outfit_desc">Nowoczesna, wyrazista z lekkimi podpisami (SIL OFL)</string>
+    <string name="font_family_jakarta">Plus Jakarta Sans</string>
+    <string name="font_family_jakarta_desc">Miękka i zbalansowana geometria (SIL OFL)</string>
+    <string name="font_family_poppins">Poppins</string>
+    <string name="font_family_poppins_desc">Przyjazna, zaokrąglona i wyrazista (SIL OFL)</string>
+    <string name="font_family_lato">Lato</string>
+    <string name="font_family_lato_desc">Ciepła i czytelna do dłuższych treści (SIL OFL)</string>
+    <string name="font_family_system">Systemowy</string>
+    <string name="font_family_system_desc">Domyślna czcionka urządzenia</string>
+    <string name="settings_pin_remove_title">Usunąć kod PIN?</string>
+    <string name="settings_pin_remove_message">Prywatne notatki i foldery stracą ochronę PIN-em do czasu ustawienia nowego kodu.</string>
+    <string name="action_ok">Rozumiem</string>
+    <string name="layout_grid">Siatka (kafelki)</string>
+    <string name="layout_list">Widok listy</string>
+    <string name="theme_system">Systemowy (domyślny)</string>
+    <string name="theme_light">Jasny</string>
+    <string name="theme_dark">Ciemny</string>
+
+    <!-- Trash -->
+    <string name="trash_title">Ostatnio usunięte</string>
+    <string name="trash_empty_action">Opróżnij kosz</string>
+    <string name="trash_empty_title">Kosz jest pusty</string>
+    <string name="trash_empty_subtitle">Usunięte notatki pojawiają się tutaj przed trwałym usunięciem</string>
+    <string name="trash_confirm_empty_title">Opróżnić kosz?</string>
+    <string name="trash_confirm_empty_msg">Wszystkie notatki w koszu zostaną trwale usunięte bez możliwości przywrócenia.</string>
+    <string name="trash_restored">Przywrócono notatkę</string>
+    <string name="trash_deleted_forever">Trwale usunięto notatkę</string>
+    <string name="trash_private_note_title">Notatka z folderu prywatnego</string>
+    <string name="trash_unlock_private_subtitle">Autoryzacja wymagana dla notatek z folderu prywatnego</string>
+</resources>

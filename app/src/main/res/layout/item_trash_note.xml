@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="?attr/colorSurfaceContainer"
+    app:cardCornerRadius="18dp"
+    app:cardElevation="0dp"
+    app:strokeWidth="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="14dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTrashTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textAppearance="?attr/textAppearanceNotivoTitleMedium"
+                tools:text="Usunięta notatka" />
+
+            <TextView
+                android:id="@+id/tvTrashDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textAppearance="?attr/textAppearanceNotivoMetaLight"
+                android:textColor="?attr/colorOnSurfaceVariant"
+                tools:text="Dzisiaj" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnRestoreNote"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_toolbar_ripple"
+            android:contentDescription="@string/action_restore"
+            app:srcCompat="@drawable/ic_restore"
+            app:tint="?attr/colorPrimary" />
+
+        <ImageButton
+            android:id="@+id/btnDeleteForever"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="@drawable/bg_toolbar_ripple"
+            android:contentDescription="@string/action_delete"
+            app:srcCompat="@drawable/ic_delete"
+            app:tint="?attr/colorError" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
